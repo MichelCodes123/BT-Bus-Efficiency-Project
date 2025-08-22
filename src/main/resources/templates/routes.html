@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>BT Bus Efficiency</title>
+	<link th:href="@{/styles/routes.css}" rel="stylesheet"/> 
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+		<nav> 
+		<a href="/" class="poppins-regular">  Brampton Transit Efficiency Guide </a>
+		
+		<ul class ="poppins-regular">
+			<li><a href="/">  Home </a></li>
+			<li><a href="/">  About </a></li>
+		</ul>
+	</nav>
+	<main>
+	
+		<div id = "overallInfo">
+			<div id = "overallInfoWrap">
+				<h1 th:text="${name}" id="overallRouteId" class="poppins-regular"> Bus Name </h1>
+				<p 	th:text="${name2}"id="overallName" class ="raleway-desc"> "Zum Queen" </p>
+			</div>
+		
+			<div id="totalScoreWrap">
+				<h3 id = "totalScore" class="raleway-bold"> Total Score: <span id ="totalScoreColor" th:text = "${totals}"> 2/5</span> /5 </h3>
+				<p id = "totalScoreDesc" class="raleway-desc"> This bus usually arrives at it's stop <span id = "penaltyIndicator"> 10 minutes late</span></p>
+			</div>
+		</div>
+		
+		<div id="divider">
+		</div>	
+		<h4 class="raleway-bold"> Stops: </h4>
+		<div  id= "stopInfo">
+			<div th:each="stop: ${stops.keySet()}" class = "stopInfoCard">
+				<p th:text="${stop}" class = "stopName raleway-stop"> Downtown Terminal Zum Queen Stop</p>
+				<p th:text="${stops.get(stop)}" class = "stopScore raleway-desc"> 2/5 </p>
+				<p class = "stopScoreDesc raleway-main"> This bus usually arrives at this stop <span th:text="${stops.get(stop)}" class = "stopScoreIndicator"> 10 minutes late</span> </p>
+			</div>
+		
+		
+		</div>
+		
+		<h2 class="poppins-regular"> End of Stops . . .</h2>
+	</main>
+	
+	<footer>
+	</footer>
+
+	<script th:src="@{/routes.js}"></script>
+	
+</body>
+</html>

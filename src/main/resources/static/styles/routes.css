@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+
+
+html{
+    box-sizing: border-box;
+    margin:0;
+    
+}
+
+*, *::before, *::after{
+
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-color: #113668;
+    color:white;
+}
+
+main{
+	margin:auto;
+	max-width: 1000px;
+	
+}
+footer{
+	height:50vh;
+	width: 100%;
+}
+nav{
+	height: 10vh;
+	width:100%;
+	background-color:white;
+	display:flex;
+	justify-content: center;
+	gap: 50%;
+	align-items: center;
+
+	background-color: white;
+	
+	ul{
+		display:flex;
+		gap: 2rem;
+		color:white;
+		text-decoration: none;
+		list-style:none;
+	}
+}
+
+a{
+	color:#31598f;
+
+	text-decoration: none; 
+	
+}
+
+#overallInfo{
+	display: flex;
+	justify-content:center;
+	gap: 10rem;
+	align-items:center;
+	margin-top: 5rem;
+}
+
+#overallName{
+	position:relative;
+	top:-2rem;
+}
+
+#overallInfoWrap{
+	display:flex;
+	flex-direction: column;
+}
+#overallRouteId{
+	font-size: 10rem;
+	
+}
+
+#totalScoreWrap{
+	display:flex;
+	flex-direction:column;
+	
+	justify-content: center;
+}
+#totalScore{
+	font-size: 3rem;
+}
+#totalScoreDesc{
+	font-size: 1.5rem;
+}
+#stopInfo{
+	
+	margin-top: 2rem;
+}
+.stopName{
+	background-color:White;
+	padding:2rem 1rem;
+	border-radius:0.2cm;
+	color:black;
+	margin-left: auto;
+	
+}
+.stopScore{
+	font-size: 1.5rem;
+	
+}	
+
+.stopScoreDesc{
+
+	transition: 0.5s ease; 
+	opacity: 0;
+	
+}
+
+.stopInfoCard{
+	display: flex;
+	justify-content: center;
+	margin-bottom:2rem;
+	align-items: center;
+	gap:2rem;
+	justify-self: flex-start;
+	
+}
+
+#divider{
+	width: 100%;
+	height: 0.2rem;
+	background-color: white;
+	margin: 2rem 0rem;
+}
+
+
+.red{
+	color: #ff4040;
+}
+
+.orange{
+	color: #ffb82f;
+}
+
+.green{
+	color:#48c67d;
+}
+
+
+
+.stopInfoCard:hover{
+
+		.stopScoreDesc{
+			opacity: 1;
+		}
+	
+	
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+.raleway-bold{
+	font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.raleway-main {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-stop {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.raleway-desc {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: italic;
+}

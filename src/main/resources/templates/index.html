@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>BT Bus Efficiency</title>
+<link th:href="@{/styles/index.css}" rel="stylesheet"/> 
+</head>
+
+<body>
+	<nav> 
+		<a href="/" class="poppins-regular">  Brampton Transit Efficiency Guide </a>
+		
+		<ul class ="poppins-regular">
+			<li><a href="/">  Home </a></li>
+			<li><a href="/about">  About </a></li>
+		</ul>
+	</nav>
+	<main>
+	
+		<div id ="landing-wrap">
+			<img id="landing-image" th:src="@{/bus.png}">
+			<h1 id="landing-title" class="poppins-regular"> Brampton Transit Efficiency Guide</h1>
+			<input placeholder="Filter bus lines..." type="text" id="landing-filter"/> 
+		</div>
+		
+		<h4 class="poppins-bold"> Bus Lines (Click to Search)</h4>
+		<div id="route-wrap">
+	
+			<button th:each="name: ${routes}" th:text="${name}"class="route-name raleway-btn"> 501</button>
+		</div>
+	</main>
+	
+	<footer id="main-footer"></footer>
+	
+	<script th:src="@{/index.js}"></script>
+</body>
+</html>

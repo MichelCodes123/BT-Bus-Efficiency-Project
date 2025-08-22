@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+
+html{
+    box-sizing: border-box;
+    margin:0;
+    
+    
+}
+
+*, *::before, *::after{
+
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-color: #113668;
+    color:white;
+  
+}
+
+main{
+	margin:auto;
+	max-width: 1000px;
+	
+}
+nav{
+	height: 10vh;
+	width:100%;
+	background-color:white;
+	display:flex;
+	justify-content: center;
+	gap: 50%;
+	align-items: center;
+
+	background-color: white;
+	
+	ul{
+		display:flex;
+		gap: 2rem;
+		color:white;
+		text-decoration: none;
+		list-style:none;
+	}
+}
+
+a{
+	color:#31598f;
+
+	text-decoration: none; 
+	
+}
+
+footer{
+	height: 50vh;
+	width:100%;
+}
+.long-footer{
+	height:100vh;
+}
+
+#landing-image{
+	width: 400px; 
+	height: auto; 
+}
+#landing-wrap{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	margin: 7rem 0rem;
+	gap:2rem;
+
+}
+input[type=text]::placeholder{
+	color:white;
+}
+#landing-filter{
+	background-color: #31598f;
+	width: 50%;
+	height: 3rem;
+	border: none;
+	border-radius: 0.2cm;
+	outline: none;
+	color:white;
+	text-align:center;
+}
+#route-wrap{
+	display:grid; 
+	grid-template-columns: 1fr 1fr 1fr;
+	gap:4rem;
+}
+
+.route-name{
+	color:black;
+	background-color: white; 
+	padding: 2rem 0rem;
+	border-radius: 0.2cm;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+.raleway-main {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-stop {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.raleway-desc {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: italic;
+}
+.raleway-btn {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+}
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid ; /* Green */
+}
+
+button {
+  transition-duration: 0.4s;
+cursor: pointer;
+}
+
+button:hover {
+  background-color: #30598f; /* Green */
+  color: white;
+}
+
+.hide-btn{
+	display:none;
+}
