@@ -5,10 +5,10 @@
 4. [Caveats](#caveats) 
 5. [Deployment](#deployment)
 
-# Introduction <a name="Introduction"> </a>
+# Introduction 
 The goal of the app is to help improve the decision making process of transit riders on their daily commute. Since there are typically various different ways to reach a specific destination, riders may leverage the app to determine which routes tend to arrive on time, or severely late. Thus alternate bus routes may be taken in order to reach a destination faster. 
 
-# Methodology <a name="Methodology"> </a>
+# Methodology 
 
 ### Determining Bus Delays
 Bramptons bus schedules are defined in GTFS format on their website. This indicates the times that buses should arrive at a specific stop. Brampton Transit also provides GTFS-RT (Real time data), that provide information about the buses currently running on the road.
