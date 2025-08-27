@@ -5,6 +5,8 @@
 4. [Caveats](#caveats) 
 5. [Deployment](#deployment)
 
+See the repository for the python scripts here: https://github.com/MichelCodes123/BT-Bus-Efficiency-Python
+
 # Introduction 
 The goal of the app is to help improve the decision making process of transit riders on their daily commute. Since there are typically various different ways to reach a specific destination, riders may leverage the app to determine which routes tend to arrive on time, or severely late. Thus alternate bus routes may be taken in order to reach a destination faster. 
 
@@ -71,7 +73,7 @@ The daily averages should be composed of the same number of arrival trips, when 
 # Application Architecture 
 ![alt text](image.png)
 
-See the repository for the python scripts here: https://github.com/MichelCodes123/BT-Bus-Efficiency-Python
+
 # Caveats
 - Bus scheduling can be unpredictable. Brampton transit may add bus lines on the fly, some may go out of service unexpectedly. Detours can increase bus delays. Buses can come much earlier than scheduled. The app cannot predict all these possible usecases.
 - 4 Bus routes were excluded from the calculation.. Any "LOOP" routes causes issues with the way I performed the on-time performance calculations. I hope to revisit this in the future.
