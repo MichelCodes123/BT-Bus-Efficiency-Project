@@ -78,7 +78,7 @@ The daily averages should be composed of the same number of arrival trips, when 
 
 
 # Application Architecture 
-![alt text](image.png)
+![Application Architecture](AppArch.png)
 
 
 # Caveats
@@ -88,4 +88,4 @@ The daily averages should be composed of the same number of arrival trips, when 
 # Deployment
 Project is still in testing phase to improve accuracy of bus delay calculations...
 - The python logic is set to be deployed with Azure VM.
-- The database and sprint boot application are set to be deployed using AWS services. 
+- The database and spring boot application are set to be deployed using AWS services. 
