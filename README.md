@@ -1,5 +1,6 @@
 # Table of Contents
 1. [Introduction](#introduction)
+2. [Demo](#demo)
 2. [Methodology](#methodology)
 3. [Application Architecture](#application-architecture)
 4. [Caveats](#caveats) 
@@ -9,6 +10,10 @@ See the repository for the python scripts here: https://github.com/MichelCodes12
 
 # Introduction 
 The goal of the app is to help improve the decision making process of transit riders on their daily commute. Since there are typically various different ways to reach a specific destination, riders may leverage the app to determine which routes tend to arrive on time, or severely late. Thus alternate bus routes may be taken in order to reach a destination faster. 
+
+# Demo 
+
+**Note: The demo includes random scores for the bus route shown. The video is simply for demo purposes**
 
 # Methodology 
 
@@ -79,3 +84,6 @@ The daily averages should be composed of the same number of arrival trips, when 
 - 4 Bus routes were excluded from the calculation.. Any "LOOP" routes causes issues with the way I performed the on-time performance calculations. I hope to revisit this in the future.
 
 # Deployment
+Project is still in testing phase to improve accuracy of bus delay calculations...
+- The python logic is set to be deployed with Azure VM.
+- The database and sprint boot application are set to be deployed using AWS services. 
