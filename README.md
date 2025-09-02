@@ -13,7 +13,7 @@ The goal of the app is to help improve the decision making process of transit ri
 
 # Demo 
 
-https://github.com/user-attachments/assets/8a3e1a05-caf3-4853-82bd-0f35d774a930
+https://github.com/user-attachments/assets/1e1ef17d-fb42-4797-82a8-a9e0a28acc9c
 
 **Note: The demo includes random scores for the bus route shown. The video is simply for demo purposes**
 
